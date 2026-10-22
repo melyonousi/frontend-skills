@@ -25,4 +25,4 @@ Caveman's [licensing guide](https://github.com/JuliusBrussee/caveman/blob/main/L
 
 The FrontEnd entry point, Codex UI metadata, project-memory helper, Lighthouse guide, Understand Workspace guide, Maintain Project Memory guide, and repository packaging are local workflow material supplied with this bundle. They use the [FrontEnd MIT license](LICENSE).
 
-For public packaging, the entry point was made independent of the original user's personal setup: applying the skill on every request is an opt-in configuration, source attribution is explicit, and machine-local memory is excluded. The bundled reference instructions remain subject to the entry point's scope and conflict-resolution rules.
+For public packaging, the entry point was made independent of the original user's personal setup: applying the skill on every request is an opt-in configuration, source attribution is explicit, and machine-local memory is excluded. The entry point also explains invocation and tool adaptation for Codex, Claude Code, and other Agent Skills clients. The bundled reference instructions remain subject to the entry point's scope and conflict-resolution rules.

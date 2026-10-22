@@ -6,9 +6,15 @@ license: "Original FrontEnd material: MIT. Bundled references: MIT or Apache-2.0
 
 # FrontEnd
 
-One entry point for nine bundled workflows, including security-best-practices. Invocation: `$frontend`.
+One entry point for nine bundled workflows, including security-best-practices. Invoke as `$frontend` in Codex, `/frontend` in Claude Code, or through another Agent Skills client's supported invocation method.
 
 When this skill is selected, apply only the guidance relevant to the actual task. Keep communication concise; workspace inspection, visual changes, and audits depend on task scope. Using FrontEnd as a standing workflow for every request is an optional user configuration. A preference-setting request does not itself start a redesign or audit.
+
+## Agent portability
+
+The workflow uses standard Markdown instructions and relative bundled resources. `agents/openai.yaml` is optional Codex UI metadata; the workflow does not require it. Use the host agent's available file, shell, browser, and validation tools, and adapt shell examples to the active environment. Do not assume a tool exists because a reference names it.
+
+Product names or standalone slash commands in the source snapshots describe their original context. Read those references as guidance for the current agent, not as commands to launch another product or install another skill. Follow the project's host instructions, such as `AGENTS.md` or `CLAUDE.md`, where applicable.
 
 ## Load the relevant guidance
 
@@ -55,7 +61,7 @@ Use [scripts/ensure_project_memory.py](scripts/ensure_project_memory.py). Resolv
 python <absolute-skill-directory>/scripts/ensure_project_memory.py --root <absolute-project-root>
 ```
 
-Read the target printed by the helper: `<project-root>/.codex`, or `.codex/project-memory.md` when `.codex` is a directory. Preserve existing content; never store secrets or raw transcripts, and do not stage or commit memory unless requested.
+Read the target printed by the helper: `<project-root>/.codex`, or `.codex/project-memory.md` when `.codex` is a directory. This is an ordinary Markdown context file used by this workflow across agents; it does not require Codex or replace the host's instruction files. Preserve existing content; never store secrets or raw transcripts, and do not stage or commit memory unless requested.
 
 ## Reference provenance
 
