@@ -1,0 +1,4 @@
+interface:
+  display_name: "FrontEnd"
+  short_description: "Nine skills for frontend design, security, and quality"
+  default_prompt: "Use $frontend to inspect this project, apply relevant design and secure coding guidance, and verify the result."
